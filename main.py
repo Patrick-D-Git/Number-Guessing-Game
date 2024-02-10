@@ -3,11 +3,13 @@ import random
 
 
 def random_number():
+    """randomly picks a number from 1 to 100"""
     number = random.randint(1, 100)
     return number
 
 
 def check_guess(player_guess, computer_number):
+    """checks and compares the user guess to generated guessed number"""
     if player_guess == computer_number:
         print(f"You guessed the number {computer_number}! You won!")
         return True
